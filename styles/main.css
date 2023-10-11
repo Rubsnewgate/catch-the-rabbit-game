@@ -1,0 +1,13 @@
+body {
+  counter-reset: Game;
+}
+
+input:checked {
+  counter-increment: Game;
+}
+
+.score::after {
+  content: counter(Game);
+}
+
+/*# sourceMappingURL=main.css.map */

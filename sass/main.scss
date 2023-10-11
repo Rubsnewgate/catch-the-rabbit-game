@@ -1,0 +1,14 @@
+body {
+	// Inicia un contador
+	counter-reset: Game;
+}
+
+input:checked {
+	// Incrementando el score del jugador
+	counter-increment: Game;
+}
+
+.score::after {
+	// Agregando valor del contador a un elmento
+	content: counter(Game);
+}
