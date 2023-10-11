@@ -1,13 +1,123 @@
 body {
-  counter-reset: Game;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
 }
 
-input:checked {
-  counter-increment: Game;
+.phone {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background-color: #ccefff;
+  border: 4px solid black;
+  border-radius: 20px;
+  box-shadow: 4px 4px 3px rgba(51, 51, 51, 0.2);
 }
 
-.score::after {
-  content: counter(Game);
+.layer {
+  position: absolute;
+}
+
+.layer--1 {
+  z-index: 1;
+  right: 60px;
+  bottom: 0;
+  width: 80px;
+  height: 450px;
+  background-color: #fff;
+}
+
+.layer--2 {
+  z-index: 2;
+  bottom: 0;
+  left: 60px;
+  width: 80px;
+  height: 450px;
+  background-color: #fff;
+}
+
+.layer--3 {
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: papayawhip;
+  border-radius: 20px 20px 0 0;
+}
+
+.layer--4 {
+  z-index: 4;
+  bottom: 0;
+  left: 60px;
+  width: 80px;
+  height: 350px;
+  background-color: #fff;
+}
+
+.layer--5 {
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: palegoldenrod;
+  border-radius: 20px 20px 0 20px;
+}
+
+.layer--6 {
+  z-index: 6;
+  right: 60px;
+  bottom: 0;
+  width: 80px;
+  height: 250px;
+  background-color: #fff;
+}
+
+.layer--7 {
+  z-index: 7;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: burlywood;
+  border-radius: 20px 20px 20px 0px;
+}
+
+.layer--8 {
+  z-index: 8;
+  bottom: 0;
+  left: 64px;
+  width: 180px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: lightgreen;
+}
+
+.layer--9 {
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  border-radius: 0 0 0 20px;
+}
+
+.layer--10 {
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  border-radius: 0 0 20px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
