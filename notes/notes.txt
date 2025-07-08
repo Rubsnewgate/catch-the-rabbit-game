@@ -1,18 +1,16 @@
-1-
-Use properties that only need to go through the Composite process whenever possible.
+1- Use properties that only need to go through the Composite process whenever
+possible.
 
-2-
-If you need to animate a property that is very expensive (such as width, height, left, among others),
-try to find another property that is less costly with which you can achieve the same result
-(or at least a similar result).
+2- If you need to animate a property that is very expensive (such as width,
+height, left, among others), try to find another property that is less costly
+with which you can achieve the same result (or at least a similar result).
 
-3-
-Avoid animating many properties simultaneously.
+3- Avoid animating many properties simultaneously.
 
-4-
-If you need to hide elements, normally use the opacity and visibility properties instead of using the
-display property (as it's a non-animatable property: Properties that can be animated).
+4- If you need to hide elements, normally use the opacity and visibility
+properties instead of using the display property (as it's a not animatable
+property: Properties that can be animated).
 
-5-
-Avoid creating animations triggered by scrolling, as the scroll event listener is executed a large number
-of times. It's better to wait until you reach a certain point on the screen and then trigger the animation.
+5- Avoid creating animations triggered by scrolling, as the scroll event
+listener is executed a large number of times. It's better to wait until
+you reach a certain point on the screen and then trigger the animation.
